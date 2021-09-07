@@ -15,6 +15,13 @@ function draw() {
   tekenAchtergrond();
 
   for(var i = 0; i < huisNummers.length; i++) {
+    if (kleur == 'lightgray') {
+      kleur = 'darkgrey';
+    }
+    else {
+      kleur = 'lightgray';
+    }  
+
     var huisNum = huisNummers[i];
     tekenHuis(kleur,huisNum, huisEigenaren[i]);
     translate(150,0);
