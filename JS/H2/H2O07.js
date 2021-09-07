@@ -10,8 +10,11 @@ function setup() {
   noStroke();
   vierkanten.push(30);
   // voeg je eigen naam toe
+  namen.push("Marten")
   // sorteer de array met namen
+  namen.sort();
   // verwijder het eerste element uit vierkanten
+  vierkanten.shift();
   noLoop();
 }
 
